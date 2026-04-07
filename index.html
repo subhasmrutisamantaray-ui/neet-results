@@ -1,38 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-  <title> Aakash Test Results</title>
+  <meta charset="UTF-8">
+  <title>Aakash Test Results</title>
+
   <style>
-    #loginPage {
-  text-align:center;
-  margin-top:120px;
-}
-
-#loginPage input {
-  display:block;
-  width:250px;
-  margin:10px auto;
-  padding:10px;
-}
-
-#loginPage button {
-  padding:10px 20px;
-  background:#4a7bdc;
-  color:white;
-  border:none;
-  cursor:pointer;
-}
-
-
     * {
       box-sizing: border-box;
     }
 
     body {
+      margin:0;
       font-family: Arial;
       background:#f1f5f9;
-      margin:0;
     }
 
     .navbar {
@@ -66,16 +46,197 @@
     }
 
     th {
-  background:#e5e7eb;
-  color:black;
-}
+      background:#e5e7eb;
+      color:black;
+    }
+
     tr:hover {
       background:#e0f2fe;
     }
+
+    .hidden {
+      display:none;
+    }
+
+    /* Login styling */
+    #loginPage {
+      text-align:center;
+      margin-top:120px;
+    }
+
+    #loginPage input {
+      display:block;
+      width:250px;
+      margin:10px auto;
+      padding:10px;
+    }
+
+    #loginPage button {
+      padding:10px 20px;
+      background:#4a7bdc;
+      color:white;
+      border:none;
+      cursor:pointer;
+    }
   </style>
 </head>
+
 <body>
-  <script>
+
+<!-- LOGIN PAGE -->
+<div id="loginPage">
+  <h2>Student Login</h2>
+
+  <input type="text" id="psid" placeholder="PSID">
+  <input type="password" id="password" placeholder="Password">
+
+  <button onclick="login()">Login</button>
+
+  <p id="error" style="color:red;"></p>
+</div>
+
+<!-- DASHBOARD (HIDDEN INITIALLY) -->
+<div id="dashboard" class="hidden">
+
+  <div class="navbar">Aakash Test Results</div>
+
+  <div class="container">
+
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>PSID</th>
+          <th>Roll No</th>
+          <th>Exam Date</th>
+          <th>Course name</th>
+          <th>Test Name</th>
+          <th>Marks</th>
+          <th>Total marks</th>
+        </tr>
+      </thead>
+
+      <tbody>
+
+        <tr>
+          <td>Subha smruti samantaray</td>
+          <td>00015379714</td>
+          <td>4724251060353</td>
+          <td>2026-04-02</td>
+          <td>One Year Regular classroom Medical Course for NEET English Medium</td>
+          <td>FTS-6</td>
+          <td>612</td>
+          <td>720</td>
+        </tr>
+
+        <tr>
+          <td>Subha smruti samantaray</td>
+          <td>00015379714</td>
+          <td>4724251060353</td>
+          <td>2026-03-31</td>
+          <td>One Year Regular classroom Medical Course for NEET English Medium</td>
+          <td>FTS-5</td>
+          <td>583</td>
+          <td>720</td>
+        </tr>
+
+        <tr>
+          <td>Subha smruti samantaray</td>
+          <td>00015379714</td>
+          <td>4724251060353</td>
+          <td>2026-03-24</td>
+          <td>One Year Regular classroom Medical Course for NEET English Medium</td>
+          <td>FTS-3</td>
+          <td>625</td>
+          <td>720</td>
+        </tr>
+
+        <tr>
+          <td>Subha smruti samantaray</td>
+          <td>00015379714</td>
+          <td>4724251060353</td>
+          <td>2026-03-19</td>
+          <td>One Year Regular classroom Medical Course for NEET English Medium</td>
+          <td>FTS-2</td>
+          <td>638</td>
+          <td>720</td>
+        </tr>
+
+        <tr>
+          <td>Subha smruti samantaray</td>
+          <td>00015379714</td>
+          <td>4724251060353</td>
+          <td>2026-03-16</td>
+          <td>One Year Regular classroom Medical Course for NEET English Medium</td>
+          <td>FTS-1</td>
+          <td>586</td>
+          <td>720</td>
+        </tr>
+
+        <tr>
+          <td>Subha smruti samantaray</td>
+          <td>00015379714</td>
+          <td>4724251060353</td>
+          <td>2025-12-28</td>
+          <td>One Year Regular classroom Medical Course for NEET English Medium</td>
+          <td>AIATS 3 (Phs2)</td>
+          <td>580</td>
+          <td>720</td>
+        </tr>
+
+        <tr>
+          <td>Subha smruti samantaray</td>
+          <td>00015379714</td>
+          <td>4724251060353</td>
+          <td>2025-11-30</td>
+          <td>One Year Regular classroom Medical Course for NEET English Medium</td>
+          <td>AIATS 2 (Phs2)</td>
+          <td>625</td>
+          <td>720</td>
+        </tr>
+
+        <tr>
+          <td>Subha smruti samantaray</td>
+          <td>00015379714</td>
+          <td>4724251060353</td>
+          <td>2025-08-20</td>
+          <td>One Year Regular classroom Medical Course for NEET English Medium</td>
+          <td>FORT-3</td>
+          <td>427</td>
+          <td>720</td>
+        </tr>
+
+        <tr>
+          <td>Subha smruti samantaray</td>
+          <td>00015379714</td>
+          <td>4724251060353</td>
+          <td>2025-07-23</td>
+          <td>One Year Regular classroom Medical Course for NEET English Medium</td>
+          <td>FORT-2</td>
+          <td>423</td>
+          <td>720</td>
+        </tr>
+
+        <tr>
+          <td>Subha smruti samantaray</td>
+          <td>00015379714</td>
+          <td>4724251060353</td>
+          <td>2025-07-02</td>
+          <td>One Year Regular classroom Medical Course for NEET English Medium</td>
+          <td>FORT-1</td>
+          <td>406</td>
+          <td>720</td>
+        </tr>
+
+      </tbody>
+    </table>
+
+  </div>
+
+</div>
+
+<!-- LOGIN SCRIPT -->
+<script>
 function login() {
   let psid = document.getElementById("psid").value;
   let password = document.getElementById("password").value;
@@ -88,153 +249,6 @@ function login() {
   }
 }
 </script>
- <div id="loginPage">
-  <h2>Student Login</h2>
-
-  <input type="text" id="psid" placeholder="PSID">
-  <input type="password" id="password" placeholder="Password">
-
-  <button onclick="login()">Login</button>
-
-  <p id="error" style="color:red;"></p>
-</div>
-
-<div id="dashboard" class="hidden">
-
-  <div class="navbar">Aakash Test Results</div>
-
-  <div class="container">
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>PSID</th>
-      <th>Roll No</th>
-      <th>Exam Date</th>
-      <th>Course name</th>
-      <th>Test Name</th>
-      <th>Marks</th>
-      <th>Total marks</th>
-    </tr>
-  </thead>
-
-  <tbody>
-
-    <tr>
-      <td>Subha smruti samantaray</td>
-      <td>00015379714</td>
-      <td>4724251060353</td>
-      <td>2026-04-02</td>
-      <td>One Year Regular classroom Medical Course for NEET English Medium</td>
-      <td>FTS-6</td>
-      <td>612</td>
-      <td>720</td>
-    </tr>
-
-    <tr>
-      <td>Subha smruti samantaray</td>
-      <td>00015379714</td>
-      <td>4724251060353</td>
-      <td>2026-03-31</td>
-      <td>One Year Regular classroom Medical Course for NEET English Medium</td>
-      <td>FTS-5</td>
-      <td>583</td>
-      <td>720</td>
-    </tr>
-
-    <tr>
-      <td>Subha smruti samantaray</td>
-      <td>00015379714</td>
-      <td>4724251060353</td>
-      <td>2026-03-24</td>
-      <td>One Year Regular classroom Medical Course for NEET English Medium</td>
-      <td>FTS-3</td>
-      <td>625</td>
-      <td>720</td>
-    </tr>
-
-    <tr>
-      <td>Subha smruti samantaray</td>
-      <td>00015379714</td>
-      <td>4724251060353</td>
-      <td>2026-03-19</td>
-      <td>One Year Regular classroom Medical Course for NEET English Medium</td>
-      <td>FTS-2</td>
-      <td>638</td>
-      <td>720</td>
-    </tr>
-
-    <tr>
-      <td>Subha smruti samantaray</td>
-      <td>00015379714</td>
-      <td>4724251060353</td>
-      <td>2026-03-16</td>
-      <td>One Year Regular classroom Medical Course for NEET English Medium</td>
-      <td>FTS-1</td>
-      <td>586</td>
-      <td>720</td>
-    </tr>
-
-    <tr>
-      <td>Subha smruti samantaray</td>
-      <td>00015379714</td>
-      <td>4724251060353</td>
-      <td>2025-12-28</td>
-      <td>One Year Regular classroom Medical Course for NEET English Medium</td>
-      <td>AIATS 3 (Phs2)</td>
-      <td>580</td>
-      <td>720</td>
-    </tr>
-
-    <tr>
-      <td>Subha smruti samantaray</td>
-      <td>00015379714</td>
-      <td>4724251060353</td>
-      <td>2025-11-30</td>
-      <td>One Year Regular classroom Medical Course for NEET English Medium</td>
-      <td>AIATS 2 (Phs2)</td>
-      <td>625</td>
-      <td>720</td>
-    </tr>
-
-    <tr>
-      <td>Subha smruti samantaray</td>
-      <td>00015379714</td>
-      <td>4724251060353</td>
-      <td>2025-08-20</td>
-      <td>One Year Regular classroom Medical Course for NEET English Medium</td>
-      <td>FORT-3</td>
-      <td>427</td>
-      <td>720</td>
-    </tr>
-
-    <tr>
-      <td>Subha smruti samantaray</td>
-      <td>00015379714</td>
-      <td>4724251060353</td>
-      <td>2025-07-23</td>
-      <td>One Year Regular classroom Medical Course for NEET English Medium</td>
-      <td>FORT-2</td>
-      <td>423</td>
-      <td>720</td>
-    </tr>
-
-    <tr>
-      <td>Subha smruti samantaray</td>
-      <td>00015379714</td>
-      <td>4724251060353</td>
-      <td>2025-07-02</td>
-      <td>One Year Regular classroom Medical Course for NEET English Medium</td>
-      <td>FORT-1</td>
-      <td>406</td>
-      <td>720</td>
-    </tr>
-
-  </tbody>
-</table>
-
-</div>
 
 </body>
 </html>
